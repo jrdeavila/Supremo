@@ -12,23 +12,25 @@ class SidebarContentWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      child: Column(
-        children: [
-          Text(
-            label,
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+    return LayoutBuilder(builder: (context, constraints) {
+      return Container(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          children: [
+            Text(
+              label,
+              style: TextStyle(
+                fontSize: constraints.maxWidth * 0.08,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-          const SizedBox(height: 20),
-          Expanded(
-            child: content,
-          ),
-        ],
-      ),
-    );
+            const SizedBox(height: 20),
+            Expanded(
+              child: content,
+            ),
+          ],
+        ),
+      );
+    });
   }
 }

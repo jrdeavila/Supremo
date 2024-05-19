@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159059729264",
+    "project_id": "supremo-project",
+    "storage_bucket": "supremo-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159059729264:android:f64271bd87e7b3b7668db5",
+        "android_client_info": {
+          "package_name": "com.example.supremo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIVaxNqw9-O12YAuebSZgPi6SqJWh6L2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
